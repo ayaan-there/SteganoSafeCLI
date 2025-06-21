@@ -11,7 +11,7 @@ setup(
     description="A command-line tool for LSB steganography with encryption",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/ayaan.there/StegosafeCLI",
+    url="https://github.com/ayaan.there/StegoSafeCLI",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
