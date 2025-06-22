@@ -39,29 +39,29 @@ pip install -r requirements.txt
 
 **Basic hiding (no encryption):**
 ```
-python main.py hide -i "path/to/your/image.png" -o "path/to/output.png" -m "Your secret message"
+python cli.py hide -i "path/to/your/image.png" -o "path/to/output.png" -m "Your secret message"
 ```
 
 **Hide with encryption (more secure):**
 ```
-python main.py hide -i "path/to/your/image.png" -o "path/to/output.png" -m "Your secret message" --encrypt --key "yourpassword"
+python cli.py hide -i "path/to/your/image.png" -o "path/to/output.png" -m "Your secret message" --encrypt --key "yourpassword"
 ```
 
 **Hide a message from a text file:**
 ```
-python main.py hide -i "path/to/your/image.png" -o "path/to/output.png" -f "path/to/message.txt" --encrypt --key "yourpassword"
+python cli.py hide -i "path/to/your/image.png" -o "path/to/output.png" -f "path/to/message.txt" --encrypt --key "yourpassword"
 ```
 
 ### 🔓 Reveal a Hidden Message from an Image
 
 **Basic reveal (no decryption):**
 ```
-python main.py reveal -i "path/to/stego-image.png"
+python cli.py reveal -i "path/to/stego-image.png"
 ```
 
 **Reveal with decryption:**
 ```
-python main.py reveal -i "path/to/stego-image.png" --decrypt --key "yourpassword"
+python cli.py reveal -i "path/to/stego-image.png" --decrypt --key "yourpassword"
 ```
 
 ## 💡 Example Walkthrough
@@ -70,14 +70,14 @@ Let's say you have an image called `vacation.png` on your desktop:
 
 1. **Hide a secret message:**
    ```
-   python main.py hide -i "C:\Users\YourName\Desktop\vacation.png" -o "C:\Users\YourName\Desktop\secret_vacation.png" -m "The treasure is buried under the old oak tree!"
+   python cli.py hide -i "C:\Users\YourName\Desktop\vacation.png" -o "C:\Users\YourName\Desktop\secret_vacation.png" -m "The treasure is buried under the old oak tree!"
    ```
 
 2. **Share the `secret_vacation.png` image** - it looks exactly like the original!
 
 3. **Later, reveal the message:**
    ```
-   python main.py reveal -i "C:\Users\YourName\Desktop\secret_vacation.png"
+   python cli.py reveal -i "C:\Users\YourName\Desktop\secret_vacation.png"
    ```
 
 ## 🛠️ Command Arguments Explained
